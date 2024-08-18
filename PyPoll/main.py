@@ -8,15 +8,15 @@ csvpath = os.path.join('Resources', 'election_data.csv')
 
 # Method 2: Improved Reading using CSV module
 
-with open(csvpath) as csvfile:
+with open(csvpath , 'r') as csvfile:
 
     # CSV reader specifies delimiter and variable that holds contents
     csvreader = csv.reader(csvfile, delimiter=',')
     
-#To skip the header row
+    #To skip the header row
     next(csvreader)
 
-    #Count the totaly number of months 
+    #Count the total number of votes 
     
     total_votes = sum(1 for row in csvreader)
     

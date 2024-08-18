@@ -16,7 +16,7 @@ with open(csvpath , 'r') as csvfile:
     #To skip the header row
     next(csvreader)
 
-    #Count the totaly number of months 
+    #Count the total number of months 
     
     total_months = sum(1 for row in csvreader)
     
