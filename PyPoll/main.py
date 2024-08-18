@@ -16,9 +16,10 @@ with open(csvpath , 'r') as csvfile:
     #To skip the header row
     next(csvreader)
 
+    #Store the data in a list
+    data = list(csvreader)
     #Count the total number of votes 
-    
-    total_votes = sum(1 for row in csvreader)
+    total_votes = len(data)
     
     #printing the data title then printing a line
     print("Election Results")
