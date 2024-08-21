@@ -57,14 +57,25 @@ greatest_decrease = min(changes)
 greatest_increase_month = months[changes.index(greatest_increase)]
 greatest_decrease_month = months[changes.index(greatest_decrease)]
 
-    #printing the data title then printing a line
+    #printing the financial analysis to the terminal
 print("Finanacial Analysis")
 
 print("--------------------------------")
-    #print the total number of months
-print(f"Total number of months: {total_months}")
-
-print(f"Net Total Amount of 'Profit/Losses': ${total}")
-print(f"Average Change in 'Profit/Losses': ${average_change:.2f}")
+print(f"Total months: {total_months}")
+print(f"Total: ${total}")
+print(f"Average Change: ${average_change:.2f}")
 print(f"Greatest Increase in Profits: {greatest_increase_month} (${greatest_increase})")
 print(f"Greatest Decrease in Profits: {greatest_decrease_month} (${greatest_decrease})")
+
+#Export the financial analysis to a txt file
+output_path = os.path.join('analysis', 'financial analysis.txt')
+
+with open(output_path, 'w') as txtfile:
+
+    txtfile.write("Finanacial Analysis\n")
+    txtfile.write("--------------------------------------\n")
+    txtfile.write(f"Total months: {total_months}\n")
+    txtfile.write(f"Total: ${total}\n")
+    txtfile.write(f"Average Change: ${average_change:.2f}\n")
+    txtfile.write(f"Greatest Increase in Profits: {greatest_increase_month} (${greatest_increase})\n")
+    txtfile.write(f"Greatest Decrease in Profits: {greatest_decrease_month} (${greatest_decrease})\n")

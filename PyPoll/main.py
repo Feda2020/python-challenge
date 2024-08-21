@@ -56,6 +56,7 @@ with open(csvpath , 'r') as csvfile:
     print("--------------------------------")
     print(f"Total Votes: {total_votes}")
     print("--------------------------------")
-    print(f"{candidates}: {percentage:.3f}% ({votes})")
+    print(f"'{candidates}:' {percentage:.3f}% ({votes})\n")
     print("--------------------------------")
     print(f"Winner: {winner}")
+    print("--------------------------------")
