@@ -57,9 +57,9 @@ with open(output_path, 'w') as txtfile:
 
     #To calculate the votes percentage
         percentage = (votes / total_votes) * 100
-        print(f"{candidate}: {percentage:.3f}% and {votes}\n")
+        print(f"{candidate}: {percentage:.3f}% ({votes})\n")
     #To export the results to a txt file
-        txtfile.write(f"{candidate}: {percentage:.3f}% and {votes}\n")
+        txtfile.write(f"{candidate}: {percentage:.3f}% ({votes})\n")
         #Finding the winner
         if votes > winning_votes:
             winning_votes = votes
