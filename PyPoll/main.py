@@ -42,12 +42,24 @@ with open(csvpath , 'r') as csvfile:
     print("--------------------------------")
     print(f"Total Votes: {total_votes}")
     print("--------------------------------")
+
+    #Export the election results to a txt file
+output_path = os.path.join('analysis', 'election results.txt')
+
+with open(output_path, 'w') as txtfile:
+
+    txtfile.write("Election Results\n")
+    txtfile.write("--------------------------------\n")
+    txtfile.write(f"Total Votes: {total_votes}\n")
+    txtfile.write("--------------------------------\n")
 # Determining the percentage of votes each candidate got and finding the winner
     for candidate, votes in candidates.items():
 
     #To calculate the votes percentage
         percentage = (votes / total_votes) * 100
         print(f"{candidate}: {percentage:.3f}% and {votes}\n")
+    #To export the results to a txt file
+        txtfile.write(f"{candidate}: {percentage:.3f}% and {votes}\n")
         #Finding the winner
         if votes > winning_votes:
             winning_votes = votes
@@ -59,3 +71,8 @@ with open(csvpath , 'r') as csvfile:
     
     print("--------------------------------")
     print(f"Winner: {winner}")
+
+   
+    txtfile.write(f"--------------------------------\n")
+    txtfile.write(f"Winner: {winner}\n")
+    txtfile.write(f"--------------------------------\n")
