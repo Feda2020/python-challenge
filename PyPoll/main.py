@@ -38,13 +38,16 @@ with open(csvpath , 'r') as csvfile:
         #if candidate is not in the file, add them with count of 1
         else:
             candidates[candidate] = 1
-
+    print("Election Results")
+    print("--------------------------------")
+    print(f"Total Votes: {total_votes}")
+    print("--------------------------------")
 # Determining the percentage of votes each candidate got and finding the winner
     for candidate, votes in candidates.items():
 
     #To calculate the votes percentage
         percentage = (votes / total_votes) * 100
-
+        print(f"{candidate}: {percentage:.3f}% and {votes}\n")
         #Finding the winner
         if votes > winning_votes:
             winning_votes = votes
@@ -52,11 +55,7 @@ with open(csvpath , 'r') as csvfile:
 
 
     #printing the data title then printing a line
-    print("Election Results")
-    print("--------------------------------")
-    print(f"Total Votes: {total_votes}")
-    print("--------------------------------")
-    print(f"'{candidates}:' {percentage:.3f}% ({votes})\n")
+    
+    
     print("--------------------------------")
     print(f"Winner: {winner}")
-    print("--------------------------------")
