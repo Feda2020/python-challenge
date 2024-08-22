@@ -1,4 +1,4 @@
-# python-challenge
+# Python-Challenge
 
 ## Table of contents
 
@@ -12,16 +12,16 @@
 
 ### Financial Analysis
 
-    This is a python script to analyzr the financial records of our company from a data set composed of 2 columns: "Date" and "Profit/Losses". The requierments are: The total number of months included in the dataset, the net total amount of "profit/Losses" over the entire period, the changes in "Profit/Losses" over the entire period, and then the average of those changes, the greatest increase in profits (date and amount) over the entire period and the greatest decrease in profits (date and amount) over the entire period.
+This is a python script to analyze the financial records of our company from a data set composed of 2 columns: "Date" and "Profit/Losses". The requirements are: The total number of months included in the dataset, the net total amount of "profit/Losses" over the entire period, the changes in "Profit/Losses" over the entire period, and then the average of those changes, the greatest increase in profits (date and amount) over the entire period and the greatest decrease in profits (date and amount) over the entire period.
 
 ### Financial Analysis
 
-    In this python script I was tasked to help a small, ural town modernize its vote-counting process.The dataset is composed of three columns: "Voter ID", "County", and "Candidate". The requirements are to analyze the votes and caculate the following results: The total number of votes cast, a complete list of candidates who received votes, the percentage of votes each candidate won, the total number of votes each candidate won, and the winner of the election based on popular vote
+In this python script I was tasked to help a small, rural town modernize its vote-counting process. The dataset is composed of three columns: "Voter ID", "County", and "Candidate". The requirements are to analyze the votes and calculate the following results: The total number of votes cast, a complete list of candidates who received votes, the percentage of votes each candidate won, the total number of votes each candidate won, and the winner of the election based on popular vote.
 
  ## Picture
 ### Financial Analysis
  ![Website](./PyBank/image/Financial_Analysis_Terminal_Print.png)
- 
+
 ### FElection Results
  ![Website](./PyPoll/image/Election_Results_Terminal_Print.png)
 
