@@ -29,7 +29,7 @@ In this python script I was tasked to help a small, rural town modernize its vot
 
 ### Financial Analysis
  ![View the text file](./PyBank/analysis/financial_analysis.txt)
-### Financial Analysis
+### Election Results
  ![View the text file](./PyPoll/analysis/election_results.txt)
 
 ## Questions
@@ -40,4 +40,5 @@ Or don't hesitate to contact me via email: fido311@gmail.com
  * Stach Overflow (https://stackoverflow.com/)
  * Python Module Index (https://docs.python.org/3/py-modindex.html)
  * Xpert Learning (https://bootcampspot.com)
+    
     
